@@ -1,6 +1,6 @@
 FROM node:alpine
 ENV CI=true
-RUN npm install -g nodemon
+RUN npm install -g ts-node
  
 WORKDIR /app
 COPY package.json .
