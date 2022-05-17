@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: ecommerceapp-deployment 
+spec: 
+  selector: 
+    matchLabels: 
+      app: ecommerceapp 
+  replicas: 2 
+  template: 
+    metadata: 
+      labels: 
+        app: ecommerceapp 
+    spec: 
+      containers: 
+      - name: ecommerceapp 
+        image: dinukafernando/ecommerce-microservices:ecommercedocker
+        ports: 
+        - containerPort: 80
