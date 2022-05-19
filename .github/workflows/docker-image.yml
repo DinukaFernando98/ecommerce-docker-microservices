@@ -37,4 +37,4 @@ with:
 context: .
 file: ./Dockerfile
 push: true
-tags: ${{ secrets.harish3005 }}/payment:latest
+tags: ${{ secrets.dinukafernando }}/ecommerce-microservices:ecommercedocker
